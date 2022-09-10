@@ -1,8 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
 
-/* font-family: 'Fraunces', serif;
-font-family: 'Montserrat', sans-serif; */
 
 *{
     margin: 0;
@@ -13,14 +10,14 @@ font-family: 'Montserrat', sans-serif; */
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: hsl(30, 38%, 92%);
-    font-size:  14px;
+    font-size: 14px;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.containter{
+.container{
     margin: 30px auto;
     padding: 0 30px;
 }
@@ -38,8 +35,10 @@ body{
     max-width: 100%;
     display: inherit;
 }
+
+
 .card-content{
-    padding: 35px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -48,53 +47,56 @@ body{
 h6.pro-cat{
     text-transform: uppercase;
     letter-spacing: 3px;
+    font-size: 13px;
     color: hsl(228, 12%, 48%);
     font-weight: 500;
 }
 
 h2.pro-name{
     font-family: 'Fraunces', serif;
-    font-size: 34px;
+    font-size: 40px;
     line-height: 1em;
     color: hsl(212, 21%, 14%);
 }
 
 p.pro-des{
-    color: hsl(228, 12%, 48%); 
+    color: hsl(228, 12%, 48%);
     line-height: 1.6em;
+    font-size: 16px;
 }
 
-p.price{
-    display:flex;
+.price{
+    display: flex;
     align-items: center;
 }
 
 p.current-price{
     font-family: 'Fraunces', serif;
     color: hsl(158, 36%, 37%);
-    font-size: 25px;
-    padding-right: 25px;
-
+    font-size: 40px;
+    padding-right: 18px;
 }
 
 p.old-price{
     color: hsl(228, 12%, 48%);
     text-decoration: line-through;
 }
+
 button.cta{
     background-color: hsl(158, 36%, 37%);
     border: none;
-    padding: 14px 0;
-    border-radius: 12px;
+    padding: 19px 0;
+    border-radius: 10px;
     color: white;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     cursor: pointer;
-    transition: background-color.3s ease; 
+    transition: background-color .5s ease;
     width: 100%;
 }
+
 button.cta:hover{
-    background-color: hsl(158, 36%, 23%);;
+    background-color: hsl(158, 36%, 20%);
 }
 
 button.cta img{
@@ -106,7 +108,7 @@ button.cta img{
         grid-template-columns: 1fr;
     }
     .img img{
-        max-width: 450px;
+        max-height: 450px;
         width: 100%;
         object-fit: cover;
     }
@@ -114,7 +116,7 @@ button.cta img{
         display: block;
     }
     h6.pro-cat, h2.pro-name, p.pro-des, .price{
-        padding-bottom: 23 px;
+        padding-bottom: 23px;
     }
 }
 
@@ -124,7 +126,7 @@ button.cta img{
         padding: 0 15px;
     }
     .img img{
-        max-width: 290px;
+        max-height: 290px;
     }
     .card-content{
         padding: 24px;
@@ -133,16 +135,27 @@ button.cta img{
         padding-bottom: 16px;
     }
     h2.pro-name{
-        font-size: 28px;
+        font-size: 36px;
     }
     p.pro-des{
-        font-size: 12px;
+        font-size: 15px;
+        letter-spacing: 0.3px;
     }
     p.current-price{
-        font-size: 23px;
+        font-size: 36px;
     }
     button.cta{
-        padding: 12px 0;
-        font-size: 13px;
+        padding: 19px 0;
+        font-size: 16px;
     }
 }
+
+
+
+
+
+
+
+
+
+
